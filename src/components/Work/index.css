@@ -1,0 +1,91 @@
+.work {
+    width: 100%;
+}
+
+.work>span {
+    display: block;
+    padding: 20px 13px 12px 13px;
+    font-size: 14px;
+}
+
+.work .peoplewrapdiv {
+    padding: 0px 0px 0px 13px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.work .peoplewrapdiv::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 0px !important;
+}
+
+.work .workimg {
+    position: relative;
+    margin-right: 9px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.work .workimg .avatardiv {
+    width: 81px;
+    height: 97px;
+    border: solid #ededed 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.work .workimg .opacityDiv {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 81px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.work .workimg .opacityDiv span {
+    width: 81px;
+    height: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+.work .avatardiv img {
+    margin-top: 13px;
+    width: 55px;
+}
+
+.work .name {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 11px;
+}
+
+@media screen and (max-width: 320px) {
+    .work .workimg {
+        margin-right: 10px;
+    }
+
+    .work .peoplewrapdiv {
+        padding-left: 10px;
+    }
+
+    .work .peoplewrapdiv::after {
+        width: 95px;
+    }
+}

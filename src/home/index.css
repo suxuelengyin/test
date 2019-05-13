@@ -1,0 +1,36 @@
+.banner {
+    height: 34px;
+    width: 100%;
+    line-height: 34px;
+    background-color: #f6f6f6;
+}
+
+.banner span {
+    margin-left: 13px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.roster {
+    width: 100%;
+    height: 94px;
+    background-image: url(./shadw.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
+.flexdiv {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.flexdiv span {
+    color: #ffffff
+}

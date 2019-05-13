@@ -1,0 +1,130 @@
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapdiv {
+    width: 100%;
+}
+
+
+.search {
+    height: 44px;
+    padding: 8px 13px 0px 13px;
+
+}
+
+.search .searchOutline {
+    width: 100%;
+    height: 100%;
+    border: 1px #ededed solid;
+    border-radius: 3px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.search img {
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    margin-left: 9px;
+}
+
+
+
+.people {
+    width: 100%;
+}
+
+.people .peoplewrapdiv {
+    padding: 34px 0px 0px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.people .peoplewrapdiv::after {
+    content: '';
+    width: 105px;
+    margin-right: 0px !important;
+}
+
+.people .avatar {
+
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 55px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.people .avatar .opacityDiv {
+    top: 0;
+    left: 0;
+    position: absolute;
+    ;
+    width: 89px;
+    height: 89px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.people .avatar .opacityDiv span {
+    width: 61px;
+    height: 22px;
+    border-radius: 11px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+    background: rgba(97, 191, 73, 1);
+}
+
+.people .avatar .avatardiv {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: solid #ededed 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.people .avatardiv img {
+    margin-top: 13px;
+    width: 55px;
+}
+
+.people .name {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 11px;
+}
+
+@media screen and (max-width: 320px) {
+    .people .avatar {
+        margin-right: 10px;
+    }
+
+    .people .peoplewrapdiv {
+        padding-left: 10px;
+    }
+
+    .people .peoplewrapdiv::after {
+        width: 95px;
+    }
+}

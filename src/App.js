@@ -1,22 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Home from './home'
+import Roster from './Roster'
+import Work from './Work'
+import { Route, Router } from 'react-router-dom'
+import { Switch } from 'react-router'
+import WorkStudent from './WorkStuent';
+import Detial from './detial';
 
-
-function App() {
-	const test = () => {
-		let formData = new FormData();
-		fetch("/cms/weixin/sendSMS/checkhw_store_sms_key/send", {
-			method: "POST",
-			headers: new Headers({
-				"Content-Type": "application/x-www-form-urlencoded"
-			}),
-		})
-	}
+function App(props) {
+	console.log(props)
 	return (
-		<div className="App">
-			<button onClick={test}>点击测试跨域</button>
-		</div>
+		<>
+			<span>ss</span>
+			{/* <Route exact path='/' component={Home} />
+			<Route exact path='/roster' component={Roster} />
+			<Route exact path='/work' component={Work} />
+			<Route exact path='/workStudent' component={WorkStudent} />
+			<Route exact path='/detial' component={Detial} /> */}
+		</>
 	);
 }
 
