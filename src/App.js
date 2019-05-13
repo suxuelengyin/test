@@ -2,25 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const test = () => {
+		let formData = new FormData();
+		fetch("/cms/weixin/sendSMS/checkhw_store_sms_key/send", {
+			method: "POST",
+			headers: new Headers({
+				"Content-Type": "application/x-www-form-urlencoded"
+			}),
+		})
+	}
+	return (
+		<div className="App">
+			<button onClick={test}>点击测试跨域</button>
+		</div>
+	);
 }
 
 export default App;
