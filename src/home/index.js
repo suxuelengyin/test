@@ -6,11 +6,20 @@ export default function Home(props) {
     const { history, location: { search } } = props
     console.log(props, search)
     const id = (search || "?trusteeshipid=25").split("=")[1]
-    // useEffect(() => {
-    //     _fetch("/cms/weixin/campus/teacher/api/trusteeship/25").then(res => res.json()).then((data) => {
-    //         console.log(data)
-    //     })
-    // }, [])
+    const [datas, setDatas] = useState({})
+    useEffect(() => {
+        _fetch(`/weixin/campus/teacher/api/trusteeship/${id}`).then(res => res.json()).then((data) => {
+            console.log(data)
+            if (data.code === 200) setDatas(data.data)
+        })
+    }, [])
+    useEffect(() => {
+        if (datas) {
+            document.title = datas.name || ""
+        } else if (localStorage.name) {
+            document.title = localStorage.name
+        }
+    }, [datas])
     return (
         <>
             <div className='banner'>

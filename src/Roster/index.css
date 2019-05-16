@@ -23,6 +23,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    background-color: #ffffff;
 }
 
 .search img {
@@ -105,7 +106,7 @@
 
 .people .avatardiv img {
     margin-top: 13px;
-    width: 55px;
+    width: 85px;
 }
 
 .people .name {

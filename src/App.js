@@ -5,20 +5,18 @@ import Home from './home'
 import Roster from './Roster'
 import Work from './Work'
 import { Route, Router } from 'react-router-dom'
-import { Switch } from 'react-router'
 import WorkStudent from './WorkStuent';
-import Detial from './detial';
+import Detial from './detail';
 
 function App(props) {
 	console.log(props)
 	return (
 		<>
-			<span>ss</span>
 			{/* <Route exact path='/' component={Home} />
 			<Route exact path='/roster' component={Roster} />
-			<Route exact path='/work' component={Work} />
-			<Route exact path='/workStudent' component={WorkStudent} />
-			<Route exact path='/detial' component={Detial} /> */}
+			<Route exact path='/work' component={Work} /> */}
+			<Route exact path='/' component={WorkStudent} />
+			<Route exact path='/detail' component={Detial} />
 		</>
 	);
 }

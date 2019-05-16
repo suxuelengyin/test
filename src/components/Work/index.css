@@ -43,11 +43,12 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .work .workimg .opacityDiv {
     bottom: 0;
-    left: 0;
+    left: 1px;
     position: absolute;
     width: 81px;
     height: 20px;
@@ -65,8 +66,7 @@
 
 
 .work .avatardiv img {
-    margin-top: 13px;
-    width: 55px;
+    width: 100%;
 }
 
 .work .name {
